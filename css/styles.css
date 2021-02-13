@@ -1,0 +1,193 @@
+body {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  font-family: 'Special Elite', cursive;
+}
+
+h1 {
+  margin: 0px auto;
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 5.5rem;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+.top-container {
+  margin-top: 50px;
+}
+
+.subheading:after {
+  content: "";
+  animation: typewriter 5s linear 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes typewriter {
+  0% {content: "a";}
+  1% {content: "a c";}
+  2% {content: "a ca";}
+  3% {content: "a cat";}
+  4% {content: "a cat h";}
+  5% {content: "a cat hu";}
+  6% {content: "a cat huf";}
+  7% {content: "a cat huff";}
+  8% {content: "a cat huffe";}
+  9% {content: "a cat huffer";}
+  10% {content: "a cat huffer.";}
+  40% {content: "a cat huffer.";}
+  41% {content: "a cat huffer";}
+  42% {content: "a cat huffe";}
+  43% {content: "a cat huff";}
+  44% {content: "a cat huf";}
+  45% {content: "a cat hu";}
+  46% {content: "a cat h";}
+  47% {content: "a cat";}
+  48% {content: "a ca";}
+  49% {content: "a c";}
+  50% {content: "a ";}
+  54% {content: "a m";}
+  55% {content: "a ma";}
+  56% {content: "a man";}
+  57% {content: "a mani";}
+  58% {content: "a mania";}
+  59% {content: "a maniac";}
+  78% {content: "a maniac";}
+  79% {content: "a mania";}
+  80% {content: "a mani";}
+  81% {content: "a man";}
+  82% {content: "a ma";}
+  83% {content: "a m";}
+  84% {content: "a ";}
+  88% {content: "a w";}
+  89% {content: "a we";}
+  90% {content: "a web";}
+  91% {content: "a web d";}
+  92% {content: "a web de";}
+  93% {content: "a web dev";}
+  94% {content: "a web deve";}
+  95% {content: "a web devel";}
+  96% {content: "a web develo";}
+  97% {content: "a web develop";}
+  98% {content: "a web develope";}
+  99% {content: "a web developer";}
+  100% {content: "a web developer.";}
+}
+
+/* icon stuff */
+
+.icon-container {
+  font-size: 4rem;
+}
+
+.fab {
+  margin: 10px;
+  color: black;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.fa-linkedin {
+  background: -webkit-linear-gradient(135deg, #D6FF7F 10%, #00B3CC 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.fa-codepen {
+  background: -webkit-linear-gradient(#D6FF7F 10%, #00B3CC 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.fa-github {
+  background: -webkit-linear-gradient(45deg, #D6FF7F 10%, #00B3CC 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.fab:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+/* button stuff */
+
+.btn-container {
+  margin-bottom: 200px;
+}
+
+a.btn:link, a.btn:visited {
+  position: relative;
+  display: block;
+  width: 140px;
+  margin: 30px auto 0;
+  padding: 18px 15px 15px 15px;
+  border: 2px solid black;
+  background: rgba(255, 255, 255, 0.2);
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  overflow: hidden;
+  letter-spacing: .08rem;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+a.btn:link:after, a.btn:visited:after {
+  content: "";
+  position: absolute;
+  background: none repeat scroll 0 0 black;
+  height: 0%;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  z-index: -1;
+  -webkit-transition: all .3s ease 0s;
+  -moz-transition: all .3s ease 0s;
+  -o-transition: all .3s ease 0s;
+  transition: all .3s ease 0s;
+}
+a.btn:link:hover, a.btn:visited:hover {
+  color: white;
+  text-shadow: none;
+}
+a.btn:link:hover:after, a.btn:visited:hover:after {
+  height: 420%;
+}
+
+a.btn:after {
+  opacity: .5;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+a.btn.smooth:hover:after {
+  height: 140%;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .icon-container {
+    font-size: 2.5rem;
+  }
+
+}
